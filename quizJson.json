@@ -1,0 +1,54 @@
+{
+  "quizData": [
+    {
+      "question": "Quel est le capitale de la France ?",
+      "answers": ["Paris", "Londres", "Madrid", "Berlin"],
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "Qui a peint la Joconde ?",
+      "answers": ["Leonard de Vinci", "Pablo Picasso", "Vincent Van Gogh", "Michel-Ange"],
+      "correctAnswer": "Leonard de Vinci"
+    },
+    {
+      "question": "Quelle est la capitale du Japon ?",
+      "answers": ["Tokyo", "Pékin", "Séoul", "Bangkok"],
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "Quel est l'organe le plus grand du corps humain ?",
+      "answers": ["Le cœur", "Le foie", "Les poumons", "La peau"],
+      "correctAnswer": "La peau"
+    },
+    {
+      "question": "Qui a peint la Joconde ?",
+      "answers": ["Léonard de Vinci", "Pablo Picasso", "Vincent van Gogh"],
+      "correctAnswer": "Léonard de Vinci"
+    },
+    {
+      "question": "Quelle est la plus grande planète du système solaire ?",
+      "answers": ["Jupiter", "Saturne", "Mars", "Vénus"],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "question": "Quel est le plus haut sommet du monde ?",
+      "answers": ["L'Everest", "Le Mont Blanc", "Le Kilimandjaro", "Le Mont McKinley"],
+      "correctAnswer": "L'Everest"
+    },
+    {
+      "question": "Qui a écrit Le Petit Prince?",
+      "answers": ["Antoine de Saint-Exupéry", "Victor Hugo", "Albert Camus"],
+      "correctAnswer": "Antoine de Saint-Exupéry"
+    },
+    {
+      "question": "Quel est l'élément le plus abondant dans l'atmosphère terrestre ?",
+      "answers": ["Azote", "Oxygène", "Argon", "Dioxyde de carbone"],
+      "correctAnswer": "Azote"
+    },
+    {
+      "question": "Quelle est la monnaie utilisée au Japon ?",
+      "answers": ["Le yen", "Le won", "Le dollar", "Le rouble"],
+      "correctAnswer": "Le yen"
+    }
+  ]
+}

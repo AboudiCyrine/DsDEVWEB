@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://th.bing.com/th/id/R.751225c847b9b94661278add7bd3eb8f?rik=4XXSsu7xj%2b8TIQ&pid=ImgRaw&r=0"); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #eb87be;
+  color: #4b0b68;
+  padding: 20px;
+  text-align: center;
+}
+
+#quiz-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#quiz-container #question {
+  font-size: 24px; 
+  font-weight: bold;
+  color: rgb(61, 3, 93); 
+  text-shadow: 2px 2px 4px rgba(19, 2, 2, 0); 
+}
+
+#results-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: none;
+}
+
+#score {
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative;
+}
+
+
+#score::before,
+#score::after {
+  font-size: 1.5em;
+  margin-left: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#score.happy::before {
+  content: '\1F603'; /* Code Unicode pour un smiley souriant (😃) */
+  color: green;
+  opacity: 1;
+}
+
+#score.sad::after {
+  content: '\1F622'; /* Code Unicode pour un smiley pleurant (😢) */
+  color: red;
+  opacity: 1;
+}
+
+
+
+#options button {
+  margin: 10px;
+  width: 80px; /* Taille plus grande pour les boutons en cercles */
+  height: 80px; /* Taille plus grande pour les boutons en cercles */
+  background-color: #eb87be;
+  color: #4b0b68;
+  border: none;
+  border-radius: 50%; /* Pour créer des boutons en cercles */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#options button:focus {
+  outline: none; 
+}
+
+#options button.selected {
+  background-color: #00ff11; 
+  color: #fff; 
+}
+button:hover {
+  background-color: #0056b3;
+}
+#prev,
+#next {
+  background-color: #5abbdf; /* Couleur de fond bleue */
+  color: #200a43; /* Couleur du texte en blanc */
+  padding: 10px 20px; /* Espacement intérieur du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointer au survol */
+  transition: background-color 0.3s ease; /* Transition fluide de la couleur de fond */
+}
+
+#prev:hover,
+#next:hover {
+  background-color: #0056b3; /* Couleur de fond bleue foncée au survol */
+}
+
+
+@keyframes timerAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#timer {
+  font-size: 2em; /* Taille de la police plus grande */
+  font-weight: bold; /* Texte en gras */
+  color: #ff0000; /* Couleur rouge pour le timer */
+  text-align: center;
+  margin-bottom: 20px;
+  animation: timerAnimation 1s infinite;
+  border: 2px solid #ff0000; /* Ajout d'une bordure rouge */
+  border-radius: 50%; /* Pour créer un cercle */
+  padding: 10px; /* Espace à l'intérieur du cercle */
+}
+
+#congrats-message {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 2s ease; /* Animation de fondu */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
